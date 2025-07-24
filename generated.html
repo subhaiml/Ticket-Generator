@@ -1,0 +1,68 @@
+<!-- generated.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css" />
+  <title>Ticket Confirmation</title>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('assets/images/background-desktop.png')">
+  <div class="bg-cover bg-center min-h-screen" style="background-image: url('assets/images/pattern-lines.svg');">
+    <img class="absolute top-0 right-0" src="assets/images/pattern-squiggly-line-top.svg" alt="topline">
+
+    <div class="flex justify-center pt-6 pb-4">
+      <img src="assets/images/logo-full.svg" class="z-10" alt="logo" />
+    </div>
+
+    <div class="flex flex-col justify-center items-center text-white pb-4">
+      <h2 class="text-3xl font-bold leading-tight text-center">
+        Congrats, <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-white" id="ticket-name1"></span>!
+      </h2>
+      <h2 class="text-3xl font-bold leading-tight text-center mt-1">
+        Your ticket is ready.
+      </h2>
+    </div>
+
+    <div class="flex flex-col justify-center items-center text-white/50 pb-4">
+      <h3>We've emailed your ticket to </h3>
+      <h3><span class="text-orange-600" id="ticket-email"></span> and will send updates in</h3>
+      <h3>the run up to the event</h3>
+    </div>
+
+    <div class="flex justify-center relative">
+      <div class="relative w-[600px] z-10">
+        <img src="assets/images/pattern-ticket.svg" class="w-full relative z-0" alt="ticket">
+
+        <div class="absolute top-24 right-10 text-white/60 text-sm tracking-wider [writing-mode:vertical-rl]">
+          <p id="ticket-number"></p>
+        </div>
+
+        <div class="absolute top-6 left-6 z-10 text-white space-y-2">
+          <div class="flex items-center space-x-2">
+            <img src="assets/images/logo-full.svg" alt="logo"> 
+          </div>
+
+          <div class="pl-12 text-sm text-white/70">
+            <p>Date: 15 Aug 2025 / Venue: Tech Park, Bangalore</p>
+          </div>
+
+          <div class="flex space-x-3 pt-24">
+            <img class="h-20" id="profile-photo" alt="image-avatar">
+            <div class="flex flex-col space-y-2">
+              <span id="ticket-name">NAME</span>
+              <div class="flex justify-center items-center space-x-2">
+                <img src="assets/images/icon-github.svg" alt="icon-github">
+                <p id="ticket-github"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="absolute left-0 h-96" src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="bottom-lines">
+    </div>
+  </div>
+</body>
+<script src="generated.js"></script>
+</html>
